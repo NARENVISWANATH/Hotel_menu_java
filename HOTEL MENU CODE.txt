@@ -1,0 +1,173 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package hotel;
+
+/**
+ *
+ * @author NAREN
+ */
+import java.util.Scanner;
+public class Nestedswitch1 {
+    public static void main(String args[]) {
+        
+    
+        Scanner scan = new Scanner(System.in);
+        int choice;
+        int veg;
+        int nonveg;
+        int quant;
+        float total;
+        int gst = 30;
+        System.out.println("Welcome to Taj");
+        System.out.println();//one line of space
+        System.out.println("Here is the menu");
+        System.out.println("nonveg");
+
+        System.out.println();
+        System.out.println("Starters");
+        System.out.println("_______");
+        System.out.println("Chicken tikka-->160");
+        System.out.println("Chicken65--> 200rps");
+        System.out.println("Chicken85-->180rps");
+        System.out.println("Chicken Kababs-->350rps");
+        System.out.println();
+        System.out.println("Nonveg Dishes");
+        System.out.println("_______");
+        System.out.println("ChickenBiryani-->300rps");
+        System.out.println("FishBiryani-->250rps");
+        System.out.println("MuttonBiryani-->310rps");
+        System.out.println();
+        System.out.println();
+        System.out.println("veg");
+        System.out.println("_______");
+
+        System.out.println("VegBiryani-->100");
+        System.out.println("Meals-->90");
+        System.out.println("MushroomBriyani-->170");
+        System.out.println("Veg Friedrice-->80");
+        System.out.println("Please enter your choice");
+        choice = scan.nextInt();
+        veg = scan.nextInt();
+        nonveg = scan.nextInt();
+        switch (choice) {
+            case 10 : 
+                switch(nonveg) {
+            case 1:
+                System.out.println("Taj accepted your order");
+                System.out.println("Thank yot for ordering Chicken tikka");
+                System.out.println("Select the quant");
+                quant = scan.nextInt();
+                total = quant * 260 + gst;
+                System.out.println("Total amount: " + total);
+                System.out.println("Your order is on the way, Please contact Mr.raj for further information");
+                break;
+            case 2:
+                System.out.println("Taj accepted your order");
+                System.out.println("Thank yot for ordering Chicken65");
+                System.out.println("Select the quant");
+                quant = scan.nextInt();
+                total = quant * 300 + gst;
+                System.out.println("Total amount: " + total);
+                System.out.println("Your order is on the way, Please contact Mr.raj for further information");
+                break; 
+             case 3:
+                System.out.println("Taj accepted your order");
+                System.out.println("Thank yot for ordering Chicken85");
+                System.out.println("Select the quant");
+                quant = scan.nextInt();
+                total = quant * 200 + gst;
+                System.out.println("Total amount: " + total);
+                System.out.println("Your order is on the way, Please contact Mr.Raj for further information");
+                break;
+                 case 4:
+                System.out.println("Taj accepted your order");
+                System.out.println("Thank yot for ordering Chicken Kababs");
+                System.out.println("Select the quant");
+                quant = scan.nextInt();
+                total = quant * 350 + gst;
+                System.out.println("Total amount: " + total);
+                System.out.println("Your order is on the way, Please contact Mr.Raj for further information");
+                break;
+                 case 5:
+                System.out.println("Taj accepted your order");
+                System.out.println("Thank yot for ordering ChickenBiryani");
+                System.out.println("Select the quant");
+                quant = scan.nextInt();
+                total = quant * 260 + gst;
+                System.out.println("Total amount: " + total);
+                System.out.println("Your order is on the way, Please contact Mr.Raj for further information");
+                break;
+                 case 6:
+                System.out.println("Taj accepted your order");
+                System.out.println("Thank yot for ordering FishBiryani");
+                System.out.println("Select the quant");
+                quant = scan.nextInt();
+                total = quant * 300 + gst;
+                System.out.println("Total amount: " + total);
+                System.out.println("Your order is on the way, Please contact Mr.Raj for further information");
+                break;
+                 case 7:
+                System.out.println("Taj accepted your order");
+                System.out.println("Thank yot for ordering MuttonBiryani");
+                System.out.println("Select the quant");
+                quant = scan.nextInt();
+                total = quant * 350 + gst;
+                System.out.println("Total amount: " + total);
+                System.out.println("Your order is on the way, Please contact Mr.Raj for further information");
+                break;
+                 default : System.out.println("Sorry Your selected dish is not availabe");
+                
+                }
+                break;
+                
+                 case 20 : switch(veg) {
+                     
+                 
+                case 1:
+                System.out.println("Taj accepted your order");
+                System.out.println("Thank yot for ordering VegBiryani");
+                System.out.println("Select the quant");
+                quant = scan.nextInt();
+                total = quant * 100 + gst;
+                System.out.println("Total amount: " + total);
+                System.out.println("Your order is on the way, Please contact Mr.Raj for further information");
+                break;
+                case 2 :
+                System.out.println("Taj accepted your order");
+                System.out.println("Thank yot for ordering Meals");
+                System.out.println("Select the quant");
+                quant = scan.nextInt();
+                total = quant * 90 + gst;
+                System.out.println("Total amount: " + total);
+                System.out.println("Your order is on the way, Please contact Mr.Raj for further information");
+                break;
+                case 3:
+                System.out.println("Taj accepted your order");
+                System.out.println("Thank yot for ordering Special MushroomBriyani");
+                System.out.println("Select the quant");
+                quant = scan.nextInt();
+                total = quant * 150 + gst;
+                System.out.println("Total amount: " + total);
+                System.out.println("Your order is on the way, Please contact Mr.Raj for further information");
+                break;
+                case 4:
+                System.out.println("Taj accepted your order");
+                System.out.println("Thank yot for ordering Veg FriedRice");
+                System.out.println("Select the quant");
+                quant = scan.nextInt();
+                total = quant * 80 + gst;
+                System.out.println("Total amount: " + total);
+                System.out.println("Your order is on the way, Please contact Mr.Raj for further information");
+                break;
+                default : System.out.println("Sorry Your selected dish is not availabe");
+
+                
+                }
+        }
+    }
+}
+    
+
